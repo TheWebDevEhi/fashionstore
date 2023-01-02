@@ -1,0 +1,33 @@
+.homepage_dark, .products_page_dark, .about_us_dark, .contact_page_dark, .footer_dark {
+	/*background: #212529;*/
+	background: #303030;
+	color:#f1f2f3;
+}
+
+.dark-navbar{
+	background: rgba(45, 45, 45, 0.85);
+}
+
+.antique-white{
+	/*background: rgba(248,245,245,1);*/
+	background: linear-gradient(to right, #f3f4f5, #f6f7f8);
+}
+
+.dark-shadow{
+	transition: 1s !important;
+	box-shadow: 0.1em 0.15em 0.5em #A0A0A0;
+}
+
+.light-shadow{
+	transition: .5s !important;
+	box-shadow: 0.2em 0.2em 0.6em rgb(110,111,112);
+}
+
+.bg-custom-dark{
+	background: #303030;
+}
+
+.btn-custom-dark{
+	background: #303030;
+	color:#f8f9fa;
+}

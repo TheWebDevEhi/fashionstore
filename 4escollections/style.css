@@ -1,0 +1,226 @@
+* {
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+	user-select: none;
+	margin: 0;
+	padding: 0;
+	transition: 0.5s !important;
+	/*overflow-x: hidden;*/
+}
+
+body {
+	position: relative;
+}
+
+/*The homepage starts here*/
+#homepage {
+	margin: 0;
+	padding: 0;
+	height: auto;
+	width: 100%;
+}
+
+#homepage-columns-container {
+	height: 100%;
+}
+
+#homepage-text {
+	text-transform: capitalize;
+	font-weight: 500;
+	font-size: 4em;
+}
+
+/*The Merchandise page begins here*/
+
+#products_page .card {
+	transition: .7s !important;
+}
+
+#products_page .card:hover {
+	transform: scale(1.02);
+	box-shadow: 6px 7px 12px #b0b0b0;
+	border: none;
+	border-radius: 1em;
+}
+
+/*#products_page .col-md-12{
+		max-width: 70% !important;
+		max-height: 45% !important;
+	}*/
+
+/*The about us page starts here*/
+#about_us .about-wrapper {
+	min-height: auto;
+	text-align: justify;
+	font-family: squarepeg;
+	font-size: 2.55em;
+}
+
+.about-wrapper-bg {
+	background: url("assets/images/background3.jpg") rgba(240, 240, 240, 0.4);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	background-blend-mode: overlay;
+}
+
+.about-wrapper a {
+	color: #00539C;
+}
+
+/*The Contact page starts here*/
+#contact_page {
+	/*background: url("assets/images/background6.svg") rgba(50,50,50,0.3);
+		background-blend-mode: overlay;
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center;*/
+	height: auto;
+}
+
+#contact_page a{
+	color:#fff;
+	background: rgba(220, 53, 69, 0.75);
+	text-decoration: none;
+	padding:3px 7px;
+	border-radius: 0 10px 0 10px;
+}
+
+#contact_banner ul li {
+	background: rgb(250, 251, 252);
+	font-family: squarepeg;
+	font-size: 2.5em;
+}
+
+#smiley_face {
+	height: 1.5em;
+	width: 1.5em;
+}
+
+.facebook-text {
+	color: #4682B4;
+}
+
+#media_wrapper {
+	height: auto;
+	width: 100%;
+	overflow: hidden;
+}
+
+#media_wrapper img {
+	background-position: center 0;
+	background-size: contain;
+	min-height:20vh;
+	margin: 0;
+	padding: 0;
+	width: 100% !important;
+	position: relative;
+	background-repeat: no-repeat;
+}
+
+#location_wrapper {
+	max-height: 25vh;
+	overflow: hidden;
+	text-align: center;
+}
+
+#location_wrapper img {
+	background-position:center 0;
+	background-size: cover;	
+	background-repeat: no-repeat;
+	width:100%;
+}
+
+#back_to_top {
+	transition: 2s !important;
+	transition-timing-function: linear;
+	color: #f8f9fa;
+}
+
+.backTop {
+	position: fixed;
+	display: block;
+	bottom: 20px;
+	width: 3em;
+	height: 3em;
+	right: 20px;
+	z-index: 100;
+	color: rgba(248, 249, 250, 0.7);
+	background: rgba(220, 53, 69, 0.75);
+	transition: .7s !important;
+}
+
+.backTop:hover {
+	background: rgb(220, 53, 69);
+	color: #ffffff;
+}
+
+/*This below is for the footer*/
+footer {
+	height: 50px
+}
+
+#footer a {
+	color: #ff4343;
+}
+
+/*This below is for styling used generally*/
+@font-face {
+	font-family: ubuntu-regular;
+	src: url(assets/fonts/Ubuntu-Condensed/UbuntuCondensed-Regular.ttf);
+}
+
+@font-face {
+	font-family: squarepeg;
+	src: url(assets/fonts/Squarepeg/SquarePeg-Regular.ttf);
+}
+
+.brand-name {
+	background: linear-gradient(to right, #ff6363 0%, #333333 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.brand-motto {
+	color: #ff4343;
+}
+
+/*Responsive code starts here*/
+
+@media screen and (max-width:319px) {
+	#homepage-text {
+		font-size: 2.5em;
+	}
+
+}
+
+/*The below code is for tablets*/
+@media screen and (min-width: 768px) {
+	#homepage {
+		height: 75vh;
+	}
+}
+
+/*The below code is for laptop screens alone*/
+@media screen and (min-width:1200px) {
+	#homepage {
+		height: 100vh;
+	}
+
+	#about_us .about-wrapper {
+		min-height: 75vh;
+		font-size: 2.75em;
+	}
+
+	#contact_page {
+		min-height: 100vh;
+	}
+
+	.facebook-frame {
+		min-height: 20vh;
+	}
+
+	.address-frame {
+		min-height: 40vh;
+	}
+}
